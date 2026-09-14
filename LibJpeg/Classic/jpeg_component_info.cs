@@ -35,7 +35,7 @@ namespace BitMiracle.LibJpeg.Classic
          * these values do not depend on whether a scan is interleaved or not.
          */
         private int width_in_blocks;
-        internal int height_in_blocks;
+        private int height_in_blocks;
 
         /* Size of a DCT block in samples,
          * reflecting any scaling we choose to apply during the DCT step.
@@ -187,6 +187,16 @@ namespace BitMiracle.LibJpeg.Classic
         {
             get { return width_in_blocks; }
             set { width_in_blocks = value; }
+        }
+        
+        /// <summary>
+        /// Gets or sets the height in blocks.
+        /// </summary>
+        /// <value>The height in blocks.</value>
+        public int Height_in_blocks
+        {
+            get { return height_in_blocks; }
+            set { height_in_blocks = value; }
         }
 
         /// <summary>
