@@ -188,6 +188,16 @@ namespace BitMiracle.LibJpeg.Classic
             get { return width_in_blocks; }
             set { width_in_blocks = value; }
         }
+        
+        /// <summary>
+        /// Gets or sets the height in blocks.
+        /// </summary>
+        /// <value>The height in blocks.</value>
+        public int Height_in_blocks
+        {
+            get { return height_in_blocks; }
+            set { height_in_blocks = value; }
+        }
 
         /// <summary>
         /// Gets the downsampled width.
